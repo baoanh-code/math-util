@@ -18,18 +18,34 @@ public class MathUtil {
      * @throws IllegalArgumentException neu n < 0 hoac n > 20
      */
     public static long getFactorial(int n) {
+
+        // Kiểm tra đầu vào
         if (n < 0 || n > 20) {
-            throw new IllegalArgumentException("Invalid argument. n must be between 0 and 20");
+            throw new IllegalArgumentException("n must be between 0 and 20");
         }
 
+        // Điều kiện dừng đệ quy
         if (n == 0 || n == 1) {
             return 1;
         }
 
-        long product = 1;
-        for (int i = 2; i <= n; i++) {
-            product *= i;
-        }
-        return product;
+        // Gọi đệ quy
+        return n * getFactorial(n - 1);
+
+
+
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid argument. n must be between 0 and 20");
+//        }
+//
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//
+//        long product = 1;
+//        for (int i = 2; i <= n; i++) {
+//            product *= i;
+//        }
+//        return product;
     }
 }
