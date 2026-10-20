@@ -26,7 +26,7 @@ public class MathUtil {
 
         // Điều kiện dừng đệ quy
         if (n == 0 || n == 1) {
-            return 2;
+            return 1;
         }
 
         // Gọi đệ quy
