@@ -1,5 +1,8 @@
 # Welcome to Math Utility
 
+
+[![Math Utility CI](https://github.com/baoanh-code/math-util/actions/workflows/ci-script.yml/badge.svg?branch=main)](https://github.com/baoanh-code/math-util/actions/workflows/ci-script.yml)
+
 ### You will find in this repo the following stuff:
 
 * A Maven project to implement Math Util library
